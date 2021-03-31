@@ -16,6 +16,7 @@ export class AppService {
     user = {
       ...user,
       status: UserStatus.CHECKED_OUT,
+      updatedAt: moment().toDate(),
     };
     this.users.push(user);
     return this.users;
