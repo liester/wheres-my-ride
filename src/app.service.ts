@@ -11,7 +11,7 @@ export class AppService {
     return this.users;
   }
 
-  addUsers(user: UserType): UserType[] {
+  addUser(user: UserType): UserType[] {
     user.id = Math.floor(Math.random() * 1000000);
     user = {
       ...user,

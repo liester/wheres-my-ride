@@ -14,8 +14,8 @@ export class AppController {
   }
 
   @Post(path)
-  addUsers(@Body() user: UserType): UserType[] {
-    return this.appService.addUsers(user);
+  addUser(@Body() user: UserType): UserType[] {
+    return this.appService.addUser(user);
   }
 
   @Put(`${path}/checkIn`)
